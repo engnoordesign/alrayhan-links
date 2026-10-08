@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0D2A1F">
+<meta name="description" content="عطور الريحان – واتساب، إنستغرام، فيسبوك، وموقع فرعي البلديات والمثنى في الموصل">
+<title>عطور الريحان · Alrayhan Links</title>
+</head>
+<body>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Readex+Pro:wght@400;500;600&display=swap">
+<style>
+/* Layout: one narrow phone column — emblem header, stacked link rows, two branch cards, quiet footer. Single dark look by choice. */
+:root{
+  --ground:#0D2A1F;
+  --panel:#123628;
+  --panel-hi:#174333;
+  --gold:#D6B26A;
+  --gold-soft:rgba(214,178,106,.38);
+  --gold-faint:rgba(214,178,106,.12);
+  --cream:#F3E9D2;
+  --muted:#BFB49A;
+  --ink-on-gold:#0D2A1F;
+  --f-display:'Aref Ruqaa','Amiri',serif;
+  --f-latin:'Cormorant Garamond',Georgia,serif;
+  --f-ui:'Readex Pro','Segoe UI',Tahoma,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{background:var(--ground)}
+body{
+  margin:0;color:var(--cream);font-family:var(--f-ui);font-size:15px;line-height:1.5;
+  background-color:var(--ground);
+  background-image:repeating-linear-gradient(135deg,var(--gold-faint) 0 1px,transparent 1px 9px);
+  background-attachment:fixed;
+  padding-inline:16px;padding-block:28px 40px;
+}
+.wrap{max-width:440px;margin:0 auto;display:flex;flex-direction:column;gap:26px}
+
+/* header */
+header{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;padding-top:6px}
+.emblem{width:96px;height:96px;color:var(--gold);display:block;margin-bottom:6px}
+h1{margin:0;font-family:var(--f-display);font-weight:700;font-size:44px;line-height:1.2;color:var(--gold)}
+.latin-name{font-family:var(--f-latin);font-weight:600;font-size:21px;letter-spacing:.06em;color:var(--cream);direction:ltr}
+.rule{display:flex;align-items:center;gap:8px;margin:6px 0 2px}
+.rule span{width:42px;height:1px;background:var(--gold)}
+.rule i{width:6px;height:6px;background:var(--gold);transform:rotate(45deg)}
+.tagline{margin:0;color:var(--muted);font-size:14px}
+.tagline em{display:block;font-family:var(--f-latin);font-size:15px;direction:ltr}
+
+/* section labels */
+.label{display:flex;align-items:center;gap:10px;color:var(--gold);font-size:12px;font-weight:500;letter-spacing:.04em}
+.label::after{content:"";flex:1;height:1px;background:var(--gold-soft)}
+.label small{font-family:var(--f-latin);font-size:13px;letter-spacing:.18em;font-weight:600;direction:ltr}
+
+/* link rows */
+.links{display:flex;flex-direction:column;gap:10px;list-style:none;margin:0;padding:0}
+.row{
+  display:flex;align-items:center;gap:14px;min-height:64px;padding:12px 16px;
+  background:var(--panel);border:1px solid var(--gold-soft);color:var(--cream);text-decoration:none;
+  transition:background .15s ease,border-color .15s ease,transform .15s ease;
+}
+.row:hover{background:var(--panel-hi);border-color:var(--gold)}
+.row:active{transform:scale(.99)}
+.row:focus-visible,.dir:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.ico{flex:none;width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--gold-soft);color:var(--gold)}
+.ico svg{width:20px;height:20px}
+.txt{flex:1;min-width:0;display:flex;flex-direction:column}
+.txt b{font-weight:500;font-size:16px}
+.txt span{font-size:12.5px;color:var(--muted);direction:ltr;text-align:right;overflow-wrap:anywhere}
+.chev{flex:none;width:16px;height:16px;color:var(--gold)}
+.row.primary{background:var(--gold);border-color:var(--gold);color:var(--ink-on-gold)}
+.row.primary:hover{background:#E2C283}
+.row.primary .ico{border-color:rgba(13,42,31,.35);color:var(--ink-on-gold)}
+.row.primary .txt span{color:rgba(13,42,31,.75)}
+.row.primary .chev{color:var(--ink-on-gold)}
+
+/* branches */
+.branches{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.branch{position:relative;padding:18px 16px 16px;background:var(--panel);border:1px solid var(--gold-soft);display:flex;flex-direction:column;gap:10px}
+.branch::before,.branch::after{content:"";position:absolute;width:12px;height:12px;border-color:var(--gold);border-style:solid}
+.branch::before{top:5px;right:5px;border-width:1.2px 1.2px 0 0}
+.branch::after{bottom:5px;left:5px;border-width:0 0 1.2px 1.2px}
+.branch h3{margin:0;font-size:18px;font-weight:600;color:var(--gold)}
+.branch h3 small{display:block;font-family:var(--f-latin);font-size:14px;font-weight:600;letter-spacing:.08em;color:var(--muted);direction:ltr;text-align:right}
+.hours{margin:0;display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-size:13px}
+.hours dt{color:var(--muted)}
+.hours dd{margin:0;font-variant-numeric:tabular-nums}
+.dir{margin-top:auto;display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font-weight:500;font-size:14px}
+.dir:hover{background:var(--gold);color:var(--ink-on-gold)}
+.dir svg{width:16px;height:16px}
+
+footer{text-align:center;color:var(--muted);font-size:12px;display:flex;flex-direction:column;gap:2px}
+footer a{color:var(--gold);text-decoration:none;direction:ltr}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap" dir="rtl" lang="ar">
+  <header>
+    <svg class="emblem" viewBox="0 0 120 120" fill="none" role="img" aria-label="شعار عطور الريحان">
+      <polygon points="32,14 88,14 106,32 106,88 88,106 32,106 14,88 14,32" stroke="currentColor" stroke-width="1.8"/>
+      <polygon points="34,19 86,19 101,34 101,86 86,101 34,101 19,86 19,34" stroke="currentColor" stroke-width="0.6"/>
+      <path d="M60 37 C54 35 48 30 47 24 C53 25 58 30 60 37 Z" stroke="currentColor" stroke-width="1.1" fill="currentColor" fill-opacity="0.25"/>
+      <path d="M60 37 C66 35 72 30 73 24 C67 25 62 30 60 37 Z" stroke="currentColor" stroke-width="1.1" fill="currentColor" fill-opacity="0.25"/>
+      <path d="M60 37 C58 32 58 27 60 23 C62 27 62 32 60 37 Z" stroke="currentColor" stroke-width="1.1" fill="currentColor" fill-opacity="0.25"/>
+      <path d="M50 48 H70 L68 38 H52 Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M54 48 V56 M66 48 V56" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M46 56 H74 Q80 56 80 62 V86 Q80 92 74 92 H46 Q40 92 40 86 V62 Q40 56 46 56 Z" stroke="currentColor" stroke-width="2"/>
+      <rect x="48" y="65" width="24" height="18" stroke="currentColor" stroke-width="0.8"/>
+      <path d="M60 69 L65 74 L60 79 L55 74 Z" fill="currentColor"/>
+    </svg>
+    <h1>عطور الريحان</h1>
+    <div class="latin-name">ALRAYHAN PERFUMES</div>
+    <div class="rule" aria-hidden="true"><span></span><i></i><span></span></div>
+    <p class="tagline">عطور مختارة بعناية في الموصل<em>Fine fragrances · Mosul</em></p>
+  </header>
+
+  <section aria-labelledby="contact-h">
+    <div class="label" id="contact-h">تواصل معنا <small>CONNECT</small></div>
+    <ul class="links" style="margin-top:12px">
+      <li>
+        <a class="row primary" href="https://wa.me/9647718302002" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.3-3.8A8.5 8.5 0 1 1 8 18.9z"/><path d="M9.5 9.5c.4 2.2 2.2 4 4.4 4.6"/></svg></span>
+          <span class="txt"><b>راسلنا على واتساب</b><span>WhatsApp · 0771 830 2002</span></span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+        </a>
+      </li>
+      <li>
+        <a class="row" href="https://www.alrayhanperfumes.com" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></span>
+          <span class="txt"><b>تسوّق من المتجر الإلكتروني</b><span>www.alrayhanperfumes.com</span></span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+        </a>
+      </li>
+      <li>
+        <a class="row" href="https://www.instagram.com/alrayhan_perfumes/" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.7" fill="currentColor"/></svg></span>
+          <span class="txt"><b>تابعنا على إنستغرام</b><span>Instagram · @alrayhan_perfumes</span></span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+        </a>
+      </li>
+      <li>
+        <a class="row" href="https://www.facebook.com/share/1ELEBcYdk5/" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><path d="M15.5 8H14a2 2 0 0 0-2 2v10.5M9.5 13h5"/></svg></span>
+          <span class="txt"><b>صفحتنا على فيسبوك</b><span>Facebook · Alrayhan Perfumes</span></span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+        </a>
+      </li>
+      <li>
+        <a class="row" href="tel:+9647718302002">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3.5h3l1.6 4.2-2.1 1.3a11.5 11.5 0 0 0 5.9 5.9l1.3-2.1 4.2 1.6v3a2 2 0 0 1-2.1 2A16.5 16.5 0 0 1 4.5 5.6a2 2 0 0 1 2.1-2.1z"/></svg></span>
+          <span class="txt"><b>اتصل بنا</b><span>Call · 0771 830 2002</span></span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="branches-h">
+    <div class="label" id="branches-h">فروعنا <small>BRANCHES</small></div>
+    <div class="branches" style="margin-top:12px">
+      <article class="branch">
+        <h3>فرع حي البلديات<small>Al-Baladiyat Branch</small></h3>
+        <dl class="hours">
+          <dt>السبت – الخميس</dt><dd>2:00 م – 10:00 م</dd>
+          <dt>الجمعة</dt><dd>مغلق</dd>
+        </dl>
+        <a class="dir" href="https://maps.app.goo.gl/T3KnQHGiudBwwuyCA" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.3"/></svg>
+          الموقع على الخريطة
+        </a>
+      </article>
+      <article class="branch">
+        <h3>فرع حي المثنى<small>Al-Muthanna Branch</small></h3>
+        <dl class="hours">
+          <dt>السبت – الخميس</dt><dd>2:30 م – 10:30 م</dd>
+          <dt>الجمعة</dt><dd>6:00 م – 11:00 م</dd>
+        </dl>
+        <a class="dir" href="https://maps.app.goo.gl/FKuJi69KSKiX9bRr6" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.3"/></svg>
+          الموقع على الخريطة
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <span>عطور الريحان · الموصل</span>
+    <a href="https://www.alrayhanperfumes.com" target="_blank" rel="noopener">alrayhanperfumes.com</a>
+  </footer>
+</div>
+
+</body>
+</html>
